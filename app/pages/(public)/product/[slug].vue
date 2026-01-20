@@ -12,7 +12,10 @@ useSeoMeta({
   ogTitle: () => product.value?.name || 'Producto',
   ogDescription: () => product.value?.description || 'Producto',
   ogImage: () => product.value?.images?.[0] || '',
-  // twitterTitle: () => product.value?.name || 'Producto'
+  twitterCard: () => 'summary_large_image',
+  twitterTitle: () => product.value?.name || 'Producto',
+  twitterDescription: () => product.value?.description || 'Product',
+  twitterImage: () => product.value?.images?.[0] || ''
 });
 // Buscar el producto por slug (id en este caso)
 // const product = computed(() => {
